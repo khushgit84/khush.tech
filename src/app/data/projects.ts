@@ -176,21 +176,7 @@ export const projects: Project[] = [
     hue: 30,
     glyph: "FB",
   },
-  {
-    id: "mentor-ai",
-    slug: "mentor-ai",
-    title: "Mentor AI",
-    category: "AI Assistant",
-    year: "2026",
-    client: "Personal project",
-    role: "AI Engineering",
-    description: "An AI mentor that guides students through learning paths, doubts and career direction.",
-    details: "An AI assistant for students that turns open-ended questions into structured guidance, from programming fundamentals to career roadmaps.",
-    stack: ["LLMs", "Prompt Engineering", "Python"],
-    github: gh("mentor-AI"),
-    hue: 215,
-    glyph: "MA",
-  },
+
   {
     id: "law-agency-agent",
     slug: "law-agency-agent",
