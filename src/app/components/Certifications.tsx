@@ -5,6 +5,30 @@ import { Footer } from './Footer';
 
 const certificates = [
   {
+    title: "Databricks Fundamentals",
+    issuer: "Databricks Academy",
+    date: "Sept 6, 2026",
+    image: "/certificates/databricks-fundamentals.png"
+  },
+  {
+    title: "Generative AI Fundamentals",
+    issuer: "Databricks Academy",
+    date: "Mar 12, 2026",
+    image: "/certificates/databricks-genai.png"
+  },
+  {
+    title: "AI Agent Fundamentals",
+    issuer: "Databricks Academy",
+    date: "Sept 6, 2026",
+    image: "/certificates/databricks-ai-agent.png"
+  },
+  {
+    title: "What Is Generative AI?",
+    issuer: "LinkedIn Learning",
+    date: "Aug 09, 2025",
+    image: "/certificates/linkedin-genai.png"
+  },
+  {
     title: "Claude Code in Action",
     issuer: "Anthropic",
     date: "2026",
@@ -14,21 +38,6 @@ const certificates = [
     title: "AI Fluency: Framework & Foundations",
     issuer: "AI Certification",
     date: "2025"
-  },
-  {
-    title: "Generative AI Fundamentals",
-    issuer: "Google Cloud",
-    date: "2025"
-  },
-  {
-    title: "Generative AI Fundamentals Badge",
-    issuer: "Google Cloud",
-    date: "2025"
-  },
-  {
-    title: "What Is Generative AI?",
-    issuer: "LinkedIn Learning",
-    date: "2024"
   },
   {
     title: "Azure Fundamentals",
@@ -71,6 +80,11 @@ export const Certifications = () => {
                 className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors group flex flex-col justify-between min-h-[200px]"
               >
                 <div>
+                  {cert.image && (
+                    <div className="mb-6 overflow-hidden rounded-lg border border-white/10">
+                      <img src={cert.image} alt={cert.title} className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                  )}
                   <div className="flex items-center justify-between mb-4">
                     <Award className="w-8 h-8 text-neutral-400" />
                     <span className="text-xs font-mono text-neutral-500 border border-white/10 px-3 py-1 rounded-full">{cert.date}</span>
