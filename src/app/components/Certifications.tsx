@@ -31,18 +31,33 @@ const certificates = [
   {
     title: "Claude Code in Action",
     issuer: "Anthropic",
-    date: "2026",
+    date: "Mar 12, 2026",
+    image: "/certificates/claude-code-in-action.png",
     description: "Certified in Anthropic's Claude Code — building, debugging, and shipping with AI-native development workflows."
   },
   {
     title: "AI Fluency: Framework & Foundations",
-    issuer: "AI Certification",
-    date: "2025"
+    issuer: "Anthropic",
+    date: "2026",
+    image: "/certificates/ai-fluency-framework.png"
+  },
+  {
+    title: "AI Fluency for Creative Work",
+    issuer: "Claude Academy",
+    date: "Aug 29, 2026",
+    image: "/certificates/ai-fluency-creative.png"
+  },
+  {
+    title: "AI Capabilities and Limitations",
+    issuer: "Claude Academy",
+    date: "Aug 29, 2026",
+    image: "/certificates/ai-capabilities.png"
   },
   {
     title: "Azure Fundamentals",
-    issuer: "Microsoft",
-    date: "2024"
+    issuer: "Microsoft & Simplilearn",
+    date: "Apr 25, 2026",
+    image: "/certificates/azure-fundamentals.png"
   },
   {
     title: "ML with Python Internship",
