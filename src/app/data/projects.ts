@@ -19,6 +19,22 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
   {
+    id: "vexlora-main",
+    slug: "vexlora-main",
+    title: "Vexlora India",
+    category: "Web · Landing Page",
+    year: "2026",
+    client: "Vexlora",
+    role: "Founder & Developer",
+    description: "The main landing page for Vexlora India.",
+    details: "Vexlora is a student-first guidance hub for Pallavi Engineering College — helping learners choose the right path, develop in-demand skills, and clear doubts with live support.",
+    stack: ["React", "HTML", "CSS", "UI/UX Design"],
+    github: gh("khushgit84"),
+    live: "https://vexloraindia.netlify.app/",
+    hue: 40,
+    glyph: "VI",
+  },
+  {
     id: "vexlora-websites",
     slug: "vexlora-websites",
     title: "Vexlora Websites",

@@ -1,0 +1,98 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { Award, ExternalLink } from 'lucide-react';
+import { Footer } from './Footer';
+
+const certificates = [
+  {
+    title: "Claude Code in Action",
+    issuer: "Anthropic",
+    date: "2026",
+    description: "Certified in Anthropic's Claude Code — building, debugging, and shipping with AI-native development workflows."
+  },
+  {
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "AI Certification",
+    date: "2025"
+  },
+  {
+    title: "Generative AI Fundamentals",
+    issuer: "Google Cloud",
+    date: "2025"
+  },
+  {
+    title: "Generative AI Fundamentals Badge",
+    issuer: "Google Cloud",
+    date: "2025"
+  },
+  {
+    title: "What Is Generative AI?",
+    issuer: "LinkedIn Learning",
+    date: "2024"
+  },
+  {
+    title: "Azure Fundamentals",
+    issuer: "Microsoft",
+    date: "2024"
+  },
+  {
+    title: "ML with Python Internship",
+    issuer: "Internship Certification",
+    date: "2024"
+  }
+];
+
+export const Certifications = () => {
+  return (
+    <>
+      <div className="pt-32 pb-20 min-h-[80vh]">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-16"
+          >
+            <h1 className="text-4xl md:text-6xl font-light tracking-tighter mb-6">
+              Certifications
+            </h1>
+            <p className="text-xl text-neutral-400 max-w-2xl font-light leading-relaxed">
+              Verified credentials across AI, cloud, and machine learning. Continuous learning to stay at the frontier of modern tech.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certificates.map((cert, index) => (
+              <motion.div
+                key={cert.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors group flex flex-col justify-between min-h-[200px]"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <Award className="w-8 h-8 text-neutral-400" />
+                    <span className="text-xs font-mono text-neutral-500 border border-white/10 px-3 py-1 rounded-full">{cert.date}</span>
+                  </div>
+                  <h3 className="text-xl font-light mb-2 group-hover:text-white transition-colors">
+                    {cert.title}
+                  </h3>
+                  <p className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-4">
+                    {cert.issuer}
+                  </p>
+                  {cert.description && (
+                    <p className="text-sm text-neutral-400 font-light leading-relaxed">
+                      {cert.description}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};

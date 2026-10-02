@@ -9,11 +9,13 @@ import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { Work } from './components/Work';
 import { ProjectDetail } from './components/ProjectDetail';
+import { Certifications } from './components/Certifications';
 
 const labelFor = (path: string) => {
   if (path.startsWith('/work/')) return 'PROJECT';
   if (path.startsWith('/work')) return 'PROJECTS';
   if (path.startsWith('/vexlora')) return 'VEXLORA';
+  if (path.startsWith('/certifications')) return 'CERTIFICATIONS';
   return 'KHUSH.PATEL';
 };
 
@@ -102,6 +104,7 @@ const Shell = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/vexlora" element={<VexloraPage />} />
+            <Route path="/certifications" element={<Certifications />} />
             <Route path="/work" element={<Work />} />
             <Route path="/work/:slug" element={<ProjectDetail />} />
           </Routes>

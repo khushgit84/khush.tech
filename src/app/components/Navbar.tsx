@@ -25,6 +25,7 @@ export const Navbar = () => {
     { name: 'Projects', to: '/work' },
     { name: 'About', to: '/#about' },
     { name: 'Vexlora', to: '/vexlora' },
+    { name: 'Certifications', to: '/certifications' },
     { name: 'Services', to: '/#services' },
     { name: 'Contact', to: '/#contact' }
   ];
