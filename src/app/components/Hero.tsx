@@ -102,7 +102,7 @@ export const Hero = () => {
             {[
               { icon: Github, href: 'https://github.com/khushgit84', label: 'GitHub' },
               { icon: Linkedin, href: 'https://www.linkedin.com/in/khush-patel-52b249296', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:vexlora@gmail.com', label: 'Email' },
+              { icon: Mail, href: 'mailto:vexloraindia@gmail.com', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} className="w-12 h-12 rounded-full border border-white/15 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/40 hover:-translate-y-0.5 transition-all">
                 <Icon className="w-5 h-5" />

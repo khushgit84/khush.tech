@@ -40,9 +40,9 @@ export const Footer = () => {
                    </div>
                  </button>
 
-                 <a href="mailto:vexlora@gmail.com" className="group flex items-center gap-4 text-lg font-mono text-neutral-500 hover:text-white transition-colors pl-4">
+                 <a href="mailto:vexloraindia@gmail.com" className="group flex items-center gap-4 text-lg font-mono text-neutral-500 hover:text-white transition-colors pl-4">
                    <span className="w-2 h-2 rounded-full bg-green-500" />
-                   vexlora@gmail.com
+                   vexloraindia@gmail.com
                  </a>
               </div>
             </div>
@@ -52,7 +52,7 @@ export const Footer = () => {
                 <div>
                   <h4 className="font-mono text-xs uppercase tracking-widest text-neutral-500 mb-6">Socials</h4>
                   <ul className="space-y-4">
-                    {[['GitHub', 'https://github.com/khushgit84'], ['LinkedIn', 'https://www.linkedin.com/in/khush-patel-52b249296'], ['Email', 'mailto:vexlora@gmail.com']].map(([social, href]) => (
+                    {[['GitHub', 'https://github.com/khushgit84'], ['LinkedIn', 'https://www.linkedin.com/in/khush-patel-52b249296'], ['Email', 'mailto:vexloraindia@gmail.com']].map(([social, href]) => (
                       <li key={social}>
                         <a href={href} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-lg font-light text-neutral-400 hover:text-white transition-colors group">
                           {social}
@@ -103,7 +103,7 @@ const ContactModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
     const fd = new FormData(e.currentTarget as HTMLFormElement);
     const subject = encodeURIComponent(`Portfolio enquiry from ${fd.get('name')}`);
     const body = encodeURIComponent(`${fd.get('message')}\n\nReply to: ${fd.get('email')}`);
-    window.location.href = `mailto:vexlora@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:vexloraindia@gmail.com?subject=${subject}&body=${body}`;
     setFormState('submitting');
     setTimeout(() => {
       setFormState('success');
@@ -160,7 +160,7 @@ const ContactModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
                   <span className="italic font-serif text-neutral-500">Hello</span>
                 </h3>
                 <p className="text-neutral-400 font-light mb-12">
-                  Got a project, internship or hackathon idea? This will open an email to vexlora@gmail.com.
+                  Got a project, internship or hackathon idea? This will open an email to vexloraindia@gmail.com.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-12">
