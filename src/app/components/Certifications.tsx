@@ -1,3 +1,4 @@
+// cspell:ignore genai
 import React from 'react';
 import { motion } from 'motion/react';
 import { Award, ExternalLink } from 'lucide-react';
@@ -28,12 +29,7 @@ const certificates = [
     date: "Aug 09, 2025",
     image: "/certificates/linkedin-genai.jpg"
   },
-  {
-    title: "Claude Certified Architect",
-    issuer: "Anthropic",
-    date: "Mar 13, 2024",
-    image: "/certificates/claude-certified-architect.jpg"
-  },
+
   {
     title: "Claude Code in Action",
     issuer: "Anthropic",
