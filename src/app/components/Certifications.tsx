@@ -29,6 +29,12 @@ const certificates = [
     image: "/certificates/linkedin-genai.png"
   },
   {
+    title: "Claude Certified Architect",
+    issuer: "Anthropic",
+    date: "Mar 13, 2024",
+    image: "/certificates/claude-certified-architect.png"
+  },
+  {
     title: "Claude Code in Action",
     issuer: "Anthropic",
     date: "Mar 12, 2026",
