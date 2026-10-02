@@ -19,6 +19,22 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
   {
+    id: "codementor-ai",
+    slug: "codementor-ai",
+    title: "CodeMentor AI",
+    category: "AI · Mentorship",
+    year: "2026",
+    client: "Personal project",
+    role: "AI Engineering & Development",
+    description: "An AI-powered engineering mentor for students.",
+    details: "CodeMentor AI provides personalized DSA help, mock interviews, resume reviews, and career guidance, all powered by Puter.js and modern web technologies with a glassmorphism interface.",
+    stack: ["HTML", "CSS", "JavaScript", "Puter.js", "AI"],
+    github: gh("codementor-ai"),
+    live: "https://codementor-ai-pi.vercel.app/",
+    hue: 280,
+    glyph: "CM",
+  },
+  {
     id: "vexlora-main",
     slug: "vexlora-main",
     title: "Vexlora India",
