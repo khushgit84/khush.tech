@@ -8,62 +8,62 @@ const certificates = [
     title: "Databricks Fundamentals",
     issuer: "Databricks Academy",
     date: "Sept 6, 2026",
-    image: "/certificates/databricks-fundamentals.png"
+    image: "/certificates/databricks-fundamentals.jpg"
   },
   {
     title: "Generative AI Fundamentals",
     issuer: "Databricks Academy",
     date: "Mar 12, 2026",
-    image: "/certificates/databricks-genai.png"
+    image: "/certificates/databricks-genai.jpg"
   },
   {
     title: "AI Agent Fundamentals",
     issuer: "Databricks Academy",
     date: "Sept 6, 2026",
-    image: "/certificates/databricks-ai-agent.png"
+    image: "/certificates/databricks-ai-agent.jpg"
   },
   {
     title: "What Is Generative AI?",
     issuer: "LinkedIn Learning",
     date: "Aug 09, 2025",
-    image: "/certificates/linkedin-genai.png"
+    image: "/certificates/linkedin-genai.jpg"
   },
   {
     title: "Claude Certified Architect",
     issuer: "Anthropic",
     date: "Mar 13, 2024",
-    image: "/certificates/claude-certified-architect.png"
+    image: "/certificates/claude-certified-architect.jpg"
   },
   {
     title: "Claude Code in Action",
     issuer: "Anthropic",
     date: "Mar 12, 2026",
-    image: "/certificates/claude-code-in-action.png",
+    image: "/certificates/claude-code-in-action.jpg",
     description: "Certified in Anthropic's Claude Code — building, debugging, and shipping with AI-native development workflows."
   },
   {
     title: "AI Fluency: Framework & Foundations",
     issuer: "Anthropic",
     date: "2026",
-    image: "/certificates/ai-fluency-framework.png"
+    image: "/certificates/ai-fluency-framework.jpg"
   },
   {
     title: "AI Fluency for Creative Work",
     issuer: "Claude Academy",
     date: "Aug 29, 2026",
-    image: "/certificates/ai-fluency-creative.png"
+    image: "/certificates/ai-fluency-creative.jpg"
   },
   {
     title: "AI Capabilities and Limitations",
     issuer: "Claude Academy",
     date: "Aug 29, 2026",
-    image: "/certificates/ai-capabilities.png"
+    image: "/certificates/ai-capabilities.jpg"
   },
   {
     title: "Azure Fundamentals",
     issuer: "Microsoft & Simplilearn",
     date: "Apr 25, 2026",
-    image: "/certificates/azure-fundamentals.png"
+    image: "/certificates/azure-fundamentals.jpg"
   },
   {
     title: "ML with Python Internship",
