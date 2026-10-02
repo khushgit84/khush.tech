@@ -19,6 +19,22 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
   {
+    id: "vexloracode",
+    slug: "vexloracode",
+    title: "Vexlora Code",
+    category: "EdTech · AI",
+    year: "2026",
+    client: "Vexlora",
+    role: "Full-stack Development",
+    description: "Interactive coding tutorials for every language, guided by Bini AI.",
+    details: "An educational platform designed to make learning to code simple. It features interactive tutorials, a built-in code playground, and an AI assistant named Bini to help you whenever you get stuck.",
+    stack: ["React", "TypeScript", "AI", "Node.js"],
+    github: gh("vexloracodePublic"),
+    live: "https://vexloracode.netlify.app",
+    hue: 220,
+    glyph: "VC",
+  },
+  {
     id: "vexloraformatflow",
     slug: "vexloraformatflow",
     title: "FormatFlow",
