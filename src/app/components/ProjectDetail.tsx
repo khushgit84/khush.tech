@@ -76,11 +76,11 @@ export const ProjectDetail = () => {
                    <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-neutral-200 transition-colors">
                      <Github className="w-4 h-4" /> View on GitHub
                    </a>
-                   {project.live && (
-                     <a href={project.live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-sm font-medium hover:bg-white/10 transition-colors">
-                       Live demo <ArrowUpRight className="w-4 h-4" />
+                   {project.live && (Array.isArray(project.live) ? project.live : [project.live]).map((link, i) => (
+                     <a key={link} href={link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-sm font-medium hover:bg-white/10 transition-colors">
+                       Live demo {Array.isArray(project.live) ? i + 1 : ""} <ArrowUpRight className="w-4 h-4" />
                      </a>
-                   )}
+                   ))}
                  </div>
               </div>
            </div>

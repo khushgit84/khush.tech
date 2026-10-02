@@ -10,7 +10,7 @@ export type Project = {
   details: string;
   stack: string[];
   github: string;
-  live?: string;
+  live?: string | string[];
   hue: number;
   glyph: string;
 };
@@ -18,6 +18,22 @@ export type Project = {
 const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
+  {
+    id: "vexlora-websites",
+    slug: "vexlora-websites",
+    title: "Vexlora Websites",
+    category: "Web · Templates",
+    year: "2026",
+    client: "Vexlora",
+    role: "Front-end Development",
+    description: "A collection of interactive web experiences and templates created for Vexlora.",
+    details: "These websites showcase various modern front-end techniques, including liquid reveals, wave-equation height fields, and interactive video scrubbing using hand tracking.",
+    stack: ["HTML", "CSS", "JavaScript", "WebGL", "MediaPipe"],
+    github: gh("vexlora-websites"),
+    live: ["https://vexlorawebsite1.netlify.app/", "https://vexlorawebsite2.netlify.app/"],
+    hue: 190,
+    glyph: "VW",
+  },
   {
     id: "vexloracode",
     slug: "vexloracode",
