@@ -220,6 +220,20 @@ const arts: Record<string, React.FC<ArtProps>> = {
 };
 
 export const ProjectCover = ({ project, className = '' }: { project: Project; className?: string }) => {
+  if (project.image) {
+    return (
+      <div className={`absolute inset-0 overflow-hidden bg-neutral-950 ${className}`}>
+        <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 pointer-events-none">
+          {project.stack.slice(0, 3).map((s) => (
+            <span key={s} className="text-[10px] font-mono uppercase tracking-widest px-2 py-1 rounded-full border border-white/15 bg-black/50 text-neutral-300 backdrop-blur-md">{s}</span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   const h = project.hue;
   const c1 = `hsl(${h} 85% 62%)`;
   const c2 = `hsl(${(h + 70) % 360} 90% 65%)`;
