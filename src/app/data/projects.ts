@@ -1,4 +1,5 @@
 export type Project = {
+  image?: string;
   id: string;
   slug: string;
   title: string;
@@ -20,6 +21,7 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 export const projects: Project[] = [
   {
     id: "codementor-ai",
+    image: "/projects/codementor-ai.jpg",
     slug: "codementor-ai",
     title: "CodeMentor AI",
     category: "AI · Mentorship",
@@ -36,6 +38,7 @@ export const projects: Project[] = [
   },
   {
     id: "vexlora-main",
+    image: "/projects/vexlora-main.jpg",
     slug: "vexlora-main",
     title: "Vexlora India",
     category: "Web · Landing Page",
@@ -68,6 +71,7 @@ export const projects: Project[] = [
   },
   {
     id: "vexloracode",
+    image: "/projects/vexloracode.jpg",
     slug: "vexloracode",
     title: "Vexlora Code",
     category: "EdTech · AI",
@@ -84,6 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: "vexloraformatflow",
+    image: "/projects/vexloraformatflow.jpg",
     slug: "vexloraformatflow",
     title: "FormatFlow",
     category: "Web App · Utilities",
@@ -100,6 +105,7 @@ export const projects: Project[] = [
   },
   {
     id: "safepulse-bharat",
+    image: "/projects/safepulse-bharat.jpg",
     slug: "safepulse-bharat",
     title: "SafePulse Bharat",
     category: "AI · Campus Safety",
@@ -115,6 +121,7 @@ export const projects: Project[] = [
   },
   {
     id: "vexlora-events",
+    image: "/projects/vexlora-events.jpg",
     slug: "vexlora-events",
     title: "Vexlora Events",
     category: "Full-stack · SaaS",
@@ -131,6 +138,7 @@ export const projects: Project[] = [
   },
   {
     id: "rag-model",
+    image: "/projects/rag-model.jpg",
     slug: "rag-model",
     title: "RAG Engine",
     category: "Generative AI · RAG",
@@ -147,6 +155,7 @@ export const projects: Project[] = [
   },
   {
     id: "earnly",
+    image: "/projects/earnly.jpg",
     slug: "earnly",
     title: "Earnly",
     category: "Full-stack · SaaS",
@@ -163,6 +172,7 @@ export const projects: Project[] = [
   },
   {
     id: "faceid-blockchain",
+    image: "/projects/faceid-blockchain.jpg",
     slug: "faceid-blockchain",
     title: "FaceID → Blockchain",
     category: "Computer Vision · Web3",
@@ -179,6 +189,7 @@ export const projects: Project[] = [
 
   {
     id: "law-agency-agent",
+    image: "/projects/law-agency-agent.jpg",
     slug: "law-agency-agent",
     title: "Law & Agency Agent",
     category: "AI Agents",
@@ -210,6 +221,7 @@ export const projects: Project[] = [
   },
   {
     id: "bharat-os",
+    image: "/projects/bharat-os.jpg",
     slug: "bharat-os",
     title: "Bharat OS",
     category: "Web Experience",
@@ -256,6 +268,7 @@ export const projects: Project[] = [
   },
   {
     id: "veyra-electric",
+    image: "/projects/veyra-electric.jpg",
     slug: "veyra-electric",
     title: "Veyra",
     category: "Interactive Web Experience",
@@ -272,6 +285,7 @@ export const projects: Project[] = [
   },
   {
     id: "dna-lab",
+    image: "/projects/dna-lab.jpg",
     slug: "dna-lab",
     title: "DNA Data Storage Lab",
     category: "Simulation · Biotech",
