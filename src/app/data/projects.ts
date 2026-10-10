@@ -20,6 +20,23 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
   {
+    id: "vexlora-nearpulse",
+    image: "/projects/vexlora-nearpulse.jpg",
+    slug: "vexlora-nearpulse",
+    title: "Vexlora NearPulse",
+    category: "Mobile · Offline BLE Mesh",
+    year: "2026",
+    client: "Vexlora",
+    role: "System Architecture & Mobile Engineering",
+    description: "100% offline decentralized 2.4 GHz Bluetooth Low Energy radio mesh network for Android & iOS. Talk when the world goes offline.",
+    details: "NearPulse transforms smartphones into encrypted, decentralized BLE radio nodes for proximity peer-to-peer chat, real-time RF radar tracking, and urgent emergency SOS distress alerts. Features air-gapped 2.4 GHz GATT packet exchange, smart phone-only filtering, and cross-platform Android (Kotlin / Jetpack Compose) & iOS (Swift / CoreBluetooth) mesh interoperability.",
+    stack: ["Android", "iOS", "Kotlin", "Swift", "CoreBluetooth", "BLE GATT"],
+    github: gh("vexlora-nearpluse"),
+    live: "https://vexlora-nearpulse.vercel.app/",
+    hue: 175,
+    glyph: "NP",
+  },
+  {
     id: "codementor-ai",
     image: "/projects/codementor-ai.jpg",
     slug: "codementor-ai",

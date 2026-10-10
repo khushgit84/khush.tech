@@ -205,7 +205,25 @@ const Notes = ({ c1, c2 }: ArtProps) => (
   </g>
 );
 
+const NearPulse = ({ c1, c2 }: ArtProps) => (
+  <g>
+    {[35, 70, 105, 140].map((rad, i) => (
+      <circle key={rad} cx="200" cy="150" r={rad} fill="none" stroke={c1} strokeOpacity={0.6 - i * 0.12} strokeWidth="1.5" />
+    ))}
+    <line x1="60" y1="150" x2="340" y2="150" stroke={c1} strokeOpacity="0.3" strokeDasharray="3 3" />
+    <line x1="200" y1="10" x2="200" y2="290" stroke={c1} strokeOpacity="0.3" strokeDasharray="3 3" />
+    <path d="M200 150 L310 80 A140 140 0 0 0 200 10 Z" fill={c1} opacity="0.3" />
+    {[[160, 110], [250, 180], [230, 95], [130, 175]].map(([x, y], i) => (
+      <g key={i}>
+        <circle cx={x} cy={y} r="8" fill={c2} opacity="0.4" />
+        <circle cx={x} cy={y} r="3.5" fill="#fff" />
+      </g>
+    ))}
+  </g>
+);
+
 const arts: Record<string, React.FC<ArtProps>> = {
+  'vexlora-nearpulse': NearPulse,
   'safepulse-bharat': SafePulse,
   'vexlora-events': Events,
   'rag-model': Rag,

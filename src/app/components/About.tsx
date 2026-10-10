@@ -2,9 +2,11 @@ import React, { useRef } from 'react';
 import khushPhoto from "../../imports/file_000000002828820787b71cc171ce0618.jpg";
 import { motion } from 'motion/react';
 import { ReactiveGlowGrid } from './ui/reactive-glow-grid';
+import { projects } from '../data/projects';
 
 export const About = () => {
   const containerRef = useRef(null);
+  const liveCount = projects.reduce((acc, p) => acc + (Array.isArray(p.live) ? p.live.length : (p.live ? 1 : 0)), 0);
 
   return (
     <section ref={containerRef} id="about" className="py-32 relative bg-neutral-950 overflow-hidden">
@@ -77,11 +79,11 @@ export const About = () => {
             <div className="mt-16 pt-16 border-t border-white/5">
                <div className="grid grid-cols-3 gap-8 mb-16">
                  <div className="space-y-2 border-r border-white/5">
-                   <h4 className="text-4xl font-light text-white">11<span className="text-neutral-600 text-lg">+</span></h4>
+                   <h4 className="text-4xl font-light text-white">{projects.length}<span className="text-neutral-600 text-lg">+</span></h4>
                    <p className="text-xs uppercase tracking-widest text-neutral-500">Repos Shipped</p>
                  </div>
                  <div className="space-y-2 border-r border-white/5">
-                   <h4 className="text-4xl font-light text-white">3</h4>
+                   <h4 className="text-4xl font-light text-white">{liveCount}<span className="text-neutral-600 text-lg">+</span></h4>
                    <p className="text-xs uppercase tracking-widest text-neutral-500">Live Deployments</p>
                  </div>
                  <div className="space-y-2">
