@@ -72,6 +72,7 @@ export const projects: Project[] = [
   },
   {
     id: "vexlora-websites",
+    image: "/projects/vexlora-websites.jpg",
     slug: "vexlora-websites",
     title: "Vexlora Websites",
     category: "Web · Templates",
@@ -223,6 +224,7 @@ export const projects: Project[] = [
   },
   {
     id: "bharatplus-ai",
+    image: "/projects/bharatplus-ai.jpg",
     slug: "bharatplus-ai",
     title: "BharatPlus AI",
     category: "AI · Web",
@@ -255,6 +257,7 @@ export const projects: Project[] = [
   },
   {
     id: "electro-zap",
+    image: "/projects/electro-zap.jpg",
     slug: "electro-zap",
     title: "Electro Zap",
     category: "Hardware + AI",
