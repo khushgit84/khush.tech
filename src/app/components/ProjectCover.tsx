@@ -205,6 +205,23 @@ const Notes = ({ c1, c2 }: ArtProps) => (
   </g>
 );
 
+const EchoBand = ({ c1, c2 }: ArtProps) => (
+  <g>
+    {[30, 60, 90, 120].map((rad, i) => (
+      <circle key={rad} cx="200" cy="150" r={rad} fill="none" stroke={c1} strokeOpacity={0.6 - i * 0.12} strokeWidth="1.5" />
+    ))}
+    <path d="M120 170 A 90 90 0 0 1 280 170" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinecap="round" />
+    <rect x="108" y="150" width="24" height="40" rx="10" fill={c2} />
+    <rect x="268" y="150" width="24" height="40" rx="10" fill={c2} />
+    {[-45, -30, -15, 0, 15, 30, 45].map((dx, i) => {
+      const h = [16, 32, 48, 64, 48, 32, 16][i];
+      return (
+        <rect key={dx} x={200 + dx - 3} y={150 - h / 2} width="6" height={h} rx="3" fill={i % 2 === 0 ? c1 : '#fff'} opacity={0.9} />
+      );
+    })}
+  </g>
+);
+
 const NearPulse = ({ c1, c2 }: ArtProps) => (
   <g>
     {[35, 70, 105, 140].map((rad, i) => (
@@ -223,6 +240,7 @@ const NearPulse = ({ c1, c2 }: ArtProps) => (
 );
 
 const arts: Record<string, React.FC<ArtProps>> = {
+  'vexlora-echoband': EchoBand,
   'vexlora-nearpulse': NearPulse,
   'safepulse-bharat': SafePulse,
   'vexlora-events': Events,

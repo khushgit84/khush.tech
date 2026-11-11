@@ -20,6 +20,23 @@ const gh = (repo: string) => `https://github.com/khushgit84/${repo}`;
 
 export const projects: Project[] = [
   {
+    id: "vexlora-echoband",
+    image: "/projects/vexlora-echoband.jpg",
+    slug: "vexlora-echoband",
+    title: "Vexlora EchoBand",
+    category: "Wearable · Voice AI",
+    year: "2026",
+    client: "Vexlora",
+    role: "System Architecture, Mobile & AI Engineering",
+    description: "Always-listening Indian Hinglish AI voice companion for Sony WH-CH510 & Bluetooth headphones with background phone hardware controls.",
+    details: "EchoBand turns Sony WH-CH510 or any Bluetooth headphones into an always-listening conversational AI wearable for Android and Apple iOS. Built with Jetpack Compose, Material 3, continuous speech recognition, and low-latency Gemini 3.5 Flash inference. Features native phone hardware control (flashlight, volume, timers), persistent local memory vault, multi-language Hinglish speech synthesis, and custom Gemini API key vault.",
+    stack: ["Android", "Kotlin", "Jetpack Compose", "Gemini AI", "FastAPI", "Speech AI", "Bluetooth"],
+    github: gh("vexlora-echoband"),
+    live: "https://vexlora-echoband.vercel.app/",
+    hue: 275,
+    glyph: "EB",
+  },
+  {
     id: "vexlora-nearpulse",
     image: "/projects/vexlora-nearpulse.jpg",
     slug: "vexlora-nearpulse",
